@@ -1,0 +1,73 @@
+ html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #loading-screen {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #fef9ef;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        #model-container {
+            position: absolute;
+            left: 10vw;
+            top: 10vh;
+            width: 80vw;
+            height: 80vh;
+            background: none;
+            /* 沒有背景 */
+            display: block;
+            margin: 0;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            z-index: 15;
+            cursor: url('./img/鼠標.png') 16 16, pointer;
+        }
+
+
+
+        #visit-campus-btn {
+            position: absolute;
+            top: 80%;
+            left: 49%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            padding: 0.5em 2em;
+
+            background: rgba(255, 255, 255, 0.15);
+       
+            backdrop-filter: blur(10px);
+      
+            -webkit-backdrop-filter: blur(10px);
+
+          
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+           
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+            z-index: 20;
+
+            cursor: url('./img/鼠標.png') 16 16, pointer;
+        }
